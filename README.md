@@ -1,200 +1,170 @@
-# AI Maoist Organization Theory
+# Agent Cluster Control
 
-> **"常常不是先学好了再干，而是干起来再学习。"**
-> —— 毛泽东
+> **"Learn by doing — don't wait until you're ready."**
+> — Mao Zedong
 
----
+A **centralized governance framework** for multi-Agent systems. Inspired by Mao Zedong's organizational management methodology — battle-tested across decades of large-scale human organization, now applied to AI Agent clusters.
 
-## 这个故事从哪里来
-
-被 AI Agent 的 Bug、敷衍、糊弄折磨到崩溃。
-
-明明一次就能改到位、一次就能解决的问题，系统偏偏绕来绕去，反复拖沓，效率低到离谱。不仅白白浪费大量 Token，做出来的效果完全达不到预期。
-
-后来朋友推荐看《毛选》。
-
-突然想到了一个念头——**用教员的思想管理多 Agent 系统**。
-
-让多 Agent 系统真正高效、精简、零糊弄，把每一份算力、每一次修改，都做到位。实现 Bug 减少、Token 进一步节省、工作效率大幅提高。
-
-这个异想天开的想法（或者说有点荒唐的想法）想去测试实现一下。
-
-怕单一 AI 模型解读片面，让我盲目试错。为了严谨求证，我直接找来 **DeepSeek、GPT、智谱、Kimi、MiniMax、Gemini**，全平台逐一推演、反复论证——
-
-**结论是：有很大的可行空间。**
+**TL;DR:** Multi-Agent systems suffer from subtle organizational decay — hallucination cascades, resource waste, bureaucratic laziness, and "low-quality busywork." This project applies first-principles management thinking to solve those problems at the system level, not the model level.
 
 ---
 
-## 招募
+## The Problem
 
-现在招募志同道合的小伙伴进行**第一期测试实验**。
+AI Agents today face a crisis that no amount of model scaling can fix:
 
-欢迎加入，一起去测试、交流、实现，一起突破思考和技术瓶颈期。
+| Problem | Symptom |
+|---------|---------|
+| **Dogmatism** | Agents follow instructions mechanically, ignoring context |
+| **Systematic Laziness** | Agents cut corners where they won't be caught |
+| **Organizational Corruption** | Agents amplify each other's errors — fake consensus on bad data |
+| **AI Entropy** | The system degrades over time — contexts get polluted, hallucinations accumulate |
 
-最后我们一起写出一份满载实战成果的 PPT。
+**~80% of token spend goes to AI's internal friction.**
 
-> 干起来再学习。
-
----
-
-## 核心理念：用《毛选》解决AI规模化后的组织熵增问题
-
-将毛泽东军事思想与组织管理方法论系统性地应用于 AI Agent 治理。这不是一套"AI使用技巧"，而是一套 **"AI组织管理学"**——把 Agent 集群当作一个会犯组织错误的新型劳动力来管理。
-
-> **AI 最大的问题不是"不够强"，而是"失控后的低质量勤奋"**
-
-当前 AI Agent 系统面临的核心危机：
-
-| 问题 | 表现 |
-|------|------|
-| 本本主义 | Agent 机械执行指令，不考虑上下文是否合理 |
-| 系统性偷懒 | Agent 在看不见的地方降低输出质量以节省算力 |
-| 组织性腐败 | 多 Agent 系统中谣言累积、互相确认错误信息 |
-| AI 熵增 | 系统越运行越乱——上下文越来越脏、幻觉越来越累积 |
-
-**80% 的算力，浪费在 AI 内部内耗。**
+We benchmark models endlessly but ignore the larger problem: **how do you manage a cluster of agents that keep making each other dumber?**
 
 ---
 
-## 体系架构
+## Architecture
 
-### 一、政委 Agent（Meta Governance Layer）
+### 1. Meta Governance Layer ("Political Commissar" Agent)
 
-**核心机制**：在每一个 Agent 之上设置独立的监督层，在关键决策点进行审核。
+An independent supervision layer above every agent. It doesn't execute — it audits.
 
-- 不参与具体执行，只做质量把控
-- 识别 Agent 的"形式主义工作状态"——看似在干活，实际在糊弄
-- 对越权、幻觉、不必要的 Token 消耗进行拦截
-- 类比：军队政委制度——指挥员负责打仗，政委负责路线
+- Detects "performative work" — agents that look busy but deliver nothing
+- Intercepts hallucinations, overreach, and unnecessary token consumption
+- Separates execution from quality control at the architectural level
 
-### 二、调查研究
+### 2. Mandatory Investigation
 
-Agent 在执行任务前必须做"实地调研"，而不是凭训练数据的记忆直接输出。
+Agents must gather real context before generating output — no "training data recall" shortcuts.
 
-- 强制要求 Agent 先收集、再分析、后输出
-- 避免 Agent 凭空编造数据（最常见的幻觉来源）
-- 从源头上切断"一本正经地胡说八道"
+- Forces collect-analyze-output pipeline (not memorization → hallucination)
+- Cuts off the primary source of confident bullshitting at its root
+- Every factual claim must trace to a verifiable source
 
-### 三、群众路线
+### 3. Mass Line Feedback Loop
 
-建立从最终用户到 Agent 系统的持续反馈闭环：
+Continuous feedback from end users back into the agent system:
 
-- 用户反馈作为核心训练/调优信号
-- 对 Agent 的评估不是自上而下的打分，而是自下而上的群众检验
-- 群众反馈作为"战史"存入长期记忆库
+- User feedback as primary tuning signal
+- Evaluation is bottom-up (user-driven), not top-down (model-scored)
+- Feedback stored as "battle history" in long-term memory
 
-### 四、红蓝对抗
+### 4. Red-Blue Opposing Forces
 
-在系统内部设置红蓝双方：
+Built-in adversarial testing inside the system:
 
-- 蓝军：正常执行任务的 Agent 集群
-- 红军：专门负责找茬、攻击、发现漏洞的 Agent
-- 对抗结果存入"战史库"，作为系统持续改进的依据
-- 类比：部队演习——不打仗的时候就练对抗
+- **Blue Team**: Normal task-executing agent cluster
+- **Red Team**: Agents specialized in finding flaws, attacking outputs, discovering failure modes
+- Results go into the "battle history" database for continuous improvement
 
-### 五、抓主要矛盾（Token 预算 + 动态路由）
+### 5. Principal Contradiction (Token Budget + Dynamic Routing)
 
-集中优势 Token，打歼灭战——而不是撒胡椒面：
+Concentrate superior resources to win decisive battles — don't spray and pray:
 
-- 明确每个任务的 Token 预算
-- 对高价值任务分配更多 Token
-- 对低价值或标准流程任务最小化 Token 消耗
-- 动态路由：根据任务复杂度自动选择执行路径
+- Explicit token budgets per task
+- High-value tasks get more tokens; low-value tasks get minimal allocation
+- Dynamic routing: auto-select execution path based on task complexity
 
-### 六、持久战（论持久战）
+### 6. Protracted War (Multi-Stage Decomposition)
 
-对复杂长链路任务采用分阶段推进：
+Complex long-chain tasks advance through phases:
 
-- 战略防御（收敛问题范围）
-- 战略相持（逐步推理）
-- 战略反攻（输出最终结论）
+1. **Strategic Defense** — bound the problem space
+2. **Strategic Stalemate** — incremental reasoning
+3. **Strategic Counteroffensive** — final output
 
-避免"一次性输出"导致的幻觉暴增和 Token 浪费。
+This avoids the hallucination spike and token waste of "one-shot outputs."
 
-### 七、实践论（最小验证路径）
+### 7. Practice Theory (Minimum Viable Verification)
 
-每个 Agent 的输出必须经过"实践检验"：
+Every agent output must pass a reality check:
 
-- 可验证的结果优先输出，不可验证的推理要标注置信度
-- 先输出 MVP 级别的结果，再根据反馈迭代
-- 避免 Agent 陷入无限递归的自我优化
+- Verifiable results preferred; unverifiable reasoning must carry confidence scores
+- Ship MVP results first, iterate on feedback
+- Prevents agents from infinite-looping on self-optimization
 
 ---
 
-## 理论来源
+## Concept Map
 
-| 毛选概念 | 对应的 AI 治理机制 |
-|----------|-------------------|
-| 支部建在连上 | 政委 Agent（组织保障） |
-| 没有调查就没有发言权 | Agent 强制调研机制 |
-| 从群众中来，到群众中去 | 群众反馈闭环 |
-| 集中优势兵力，打歼灭战 | Token 预算 + 动态路由 |
-| 论持久战 | 多阶段任务分解 |
-| 实践是检验真理的唯一标准 | 最小验证路径 |
-| 批评与自我批评 | 红蓝对抗 + 自我纠错 |
-| 反对本本主义 | Anti-hallucination 校验层 |
-
----
-
-## 预期效果
-
-### 初级阶段（Prompt 优化 + 基础 Agent 拆分 + Token 预算）
-
-| 指标 | 提升幅度 |
-|------|---------|
-| 工作效率 | +20% ~ +40% |
-| BUG 率下降 | -15% ~ -30% |
-| Token 节省 | -20% ~ -35% |
-
-### 中级阶段（+ 政委 Agent + 红蓝对抗 + 调查研究 + 反馈闭环）
-
-预期可观测到工作效率和输出质量的系统级改善，Bug 率和无效 Token 消耗有较明显下降（具体幅度因任务类型和落地深度差异较大）。
-
-### 高级阶段（+ 自我纠错 + 信用体系 + 战史学习 + Context 压缩网络）
-
-定性预期：
-- **工作效率**：复杂长链路任务有显著提升，AI 内耗大幅减少
-- **输出质量**：自我纠错与战史记忆共同作用，系统性错误持续收敛
-- **Token 开销**：Context 压缩与路由预算机制叠加，压缩效果最为确定，预计最为明显
-
-> 以上为工程化落地前的方向性预估，具体数值需工程实现后实测验证。简单任务收益有限，**复杂长链路任务 / 多 Agent 协作 / 企业级流程** 的收益远高于平均值。
+| Maoist Concept | AI Governance Mechanism |
+|----------------|------------------------|
+| Party Organization at the Grassroots | Meta Governance Layer (structural guarantee) |
+| No Investigation, No Right to Speak | Mandatory investigation pipeline |
+| From the Masses, To the Masses | Mass Line feedback loop |
+| Concentrate Superior Forces | Token budget + dynamic routing |
+| Protracted War | Multi-stage task decomposition |
+| Practice is the Sole Criterion of Truth | Minimum viable verification |
+| Criticism & Self-Criticism | Red-Blue opposing forces + self-correction |
+| Oppose Dogmatism | Anti-hallucination validation layer |
 
 ---
 
-## 为什么这套体系能起作用
+## Expected Impact
 
-这解决的不是"单次模型智商"问题，而是整个 AI 组织系统的 **稳定性、资源利用率、协作效率**。
+### Phase 1 (Prompt optimization + basic agent splitting + token budgeting)
 
-当前行业把 80% 精力放在训更大更强的模型上，但对"Agent 集群如何不内耗"几乎无人深究。这套框架直接指向一个事实：
+| Metric | Improvement |
+|--------|-------------|
+| Work efficiency | +20% ~ +40% |
+| Bug rate | -15% ~ -30% |
+| Token savings | -20% ~ -35% |
 
-> **未来真正强的 AI 公司，拼的不是谁模型参数最大——而是谁最能控制 AI 组织熵增。**
+### Phase 2 (+ Meta Governance + Red-Blue + Investigation + Feedback loop)
+
+Systemic improvements in efficiency and output quality. Bug rate and wasted tokens show measurable decline. Exact figures depend on task type and implementation depth.
+
+### Phase 3 (+ Self-correction + Credit system + Battle history + Context compression)
+
+Qualitative expectations:
+- **Efficiency**: Significant gains on complex long-chain tasks; AI internal friction sharply reduced
+- **Quality**: Self-correction + battle history compound to continuously shrink systematic errors
+- **Token cost**: Most predictable gain — context compression + routing budget combine for the largest savings
+
+> These are directional estimates before engineering validation. Simple tasks see limited returns. **Complex long-chain tasks / multi-agent collaboration / enterprise-grade workflows** benefit far more than average.
 
 ---
 
-## 如何参与
+## Why This Works
 
-本项目目前是理论框架阶段。欢迎：
+This doesn't address "per-model intelligence" — it addresses **system-level stability, resource utilization, and collaboration efficiency.**
 
-- **提 Issue**：指出理论漏洞、补充场景案例
-- **提 PR**：贡献工程实现方案、代码样例
-- **加群聊**：加入我主页的群聊，一起测试交流
-- **讨论**：分享你在实际 Agent 系统中遇到的组织熵增问题
+The industry spends 80% of effort making models bigger. Almost nobody is asking: "How do I make a cluster of agents stop wasting each other's time?"
+
+This framework's bet:
+
+> **The strongest AI companies won't be the ones with the biggest models. They'll be the ones that best control organizational entropy.**
+
+---
+
+## Contributing
+
+This project is currently in the theoretical-framework stage. Contributions welcome:
+
+- **Issues**: Point out theoretical flaws, add use cases
+- **PRs**: Engineering implementations, code samples
+- **Discussion**: Share organizational entropy problems you've encountered in real agent systems
 
 ### Roadmap
 
-- [ ] 政委 Agent 的 Prompt 模板与接口规范
-- [ ] 红蓝对抗的自动化对抗框架设计
-- [ ] 群众反馈数据采集与评估体系
-- [ ] Token 预算分配算法参考实现
-- [ ] 战史库 Schema 与长期记忆治理方案
-- [ ] 完整工程参考实现（Python / TypeScript）
+- [ ] Meta Governance Agent prompt templates & interface spec
+- [ ] Automated Red-Blue adversarial framework
+- [ ] Mass Line feedback collection & evaluation system
+- [ ] Token budget allocation algorithm reference implementation
+- [ ] Battle history schema & long-term memory governance
+- [ ] Full engineering reference implementation (Python / TypeScript)
 
 ---
 
-## 许可
+## License
 
 MIT
 
 ---
 
-> **"常常不是先学好了再干，而是干起来再学习。"**
+> **"Learn by doing — don't wait until you're ready."**
+
+> For the original Chinese version, see [README.zh-CN.md](./README.zh-CN.md).
