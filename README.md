@@ -1,11 +1,18 @@
 # Agent Cluster Control
 
-> **"Learn by doing — don't wait until you're ready."**
-> — Mao Zedong
+> **AI's next breakthrough won't come from a bigger model. It will come from better thinking.**
 
-A **centralized governance framework** for multi-Agent systems. Inspired by Mao Zedong's organizational management methodology — battle-tested across decades of large-scale human organization, now applied to AI Agent clusters.
+We've spent years scaling compute. The returns are diminishing. What's missing isn't intelligence — it's structure.
 
-**TL;DR:** Multi-Agent systems suffer from subtle organizational decay — hallucination cascades, resource waste, bureaucratic laziness, and "low-quality busywork." This project applies first-principles management thinking to solve those problems at the system level, not the model level.
+The most effective organizational systems in history — centralized governance, adversarial checks, mass feedback loops, resource concentration — are still the most effective today. They predate AI by decades, but their logic is universal: **any system of agents, human or artificial, decays without structure.**
+
+This project brings those systems into AI. Not as metaphor. **As engineering.**
+
+We take ideas that won wars, built movements, and scaled nations — and we implement them as agent-level mechanisms: Meta Governance Layer, Red-Blue Opposing Forces, Token Militarization, Battle History Memory.
+
+> **AI becomes practical not when it's smarter. But when it's organized.**
+
+Looking for engineers who think the same way.
 
 ---
 
