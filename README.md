@@ -1,5 +1,17 @@
 # Agent Cluster Control
 
+<div align="center">
+
+**Multi-Agent Orchestration & Governance Framework** — centralized scheduling, adversarial inspection, token optimization, and organizational entropy control.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/kcxsb/agent-cluster-control?style=social)](https://github.com/kcxsb/agent-cluster-control)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
+*English | [中文](./README.zh-CN.md)*
+
+</div>
+
 > **AI's next breakthrough won't come from a bigger model. It will come from better thinking.**
 
 We've spent years scaling compute. The returns are diminishing. What's missing isn't intelligence — it's structure.
@@ -18,7 +30,7 @@ Looking for engineers who think the same way.
 
 ## The Problem
 
-AI Agents today face a crisis that no amount of model scaling can fix:
+**AI multi-agent systems** today face a crisis that no amount of model scaling can fix:
 
 | Problem | Symptom |
 |---------|---------|
@@ -31,9 +43,13 @@ AI Agents today face a crisis that no amount of model scaling can fix:
 
 We benchmark models endlessly but ignore the larger problem: **how do you manage a cluster of agents that keep making each other dumber?**
 
+This is the core challenge of **LLM agent management** and **multi-agent collaboration** — and this framework provides the answer through **agent governance architecture**.
+
 ---
 
-## Architecture
+## Architecture: Multi-Agent Governance System
+
+This is a complete **AI agent orchestration framework** with 7 integrated mechanisms for **autonomous agent control** and **agent workflow management**.
 
 ### 1. Meta Governance Layer ("Political Commissar" Agent)
 
@@ -147,6 +163,12 @@ This framework's bet:
 
 ---
 
+## Related Topics
+
+This project touches on: **multi-agent systems**, **LLMOps**, **AI agent framework**, **agent orchestration**, **red teaming AI**, **token optimization**, **autonomous agents**, **AI governance**, **workflow automation**, **organizational AI**.
+
+---
+
 ## Contributing
 
 This project is currently in the theoretical-framework stage. Contributions welcome:
@@ -173,5 +195,5 @@ MIT
 ---
 
 > **"Learn by doing — don't wait until you're ready."**
-
+>
 > For the original Chinese version, see [README.zh-CN.md](./README.zh-CN.md).
